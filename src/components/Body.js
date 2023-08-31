@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { Button } from './Button';
+import { Button2 } from './Button';
 import './Body.css';
 
 const ugaPic = new URL("../image/image-1.jpg", import.meta.url)
@@ -19,13 +20,13 @@ function Body() {
                 >
                    GET STARTED 
                 </Button>
-                <Button
+                <Button2
                     className='btns'
                     buttonStyle='btn--primary'
                     buttonSize='btn--large'
                 >
                    DONATE 
-                </Button>
+                </Button2>
             </div>
             
         </div>
