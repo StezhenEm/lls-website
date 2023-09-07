@@ -6,10 +6,12 @@ import './Body.css';
 
 const ugaPic = new URL("../image/image-1.jpg", import.meta.url)
 
+const llsPic = new URL("../image/Lightthenight.jpg", import.meta.url)
+
 function Body() {
     return(
         <div className='body-container' >
-            <img src={ugaPic} alt='Adventure'/> 
+            <img src={llsPic} alt='Adventure'/> 
             <h1>LLS Club at UGA</h1>
             <p>Leukemia and Lymphoma Society</p>
             <div className='body-btns'>

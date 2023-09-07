@@ -3,8 +3,12 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //import { faSlack } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faDroplet, faXmark} from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './Navbar.css';
-import { Button } from './Button';
+//import { Button } from './Button';
+import { Button2 } from './Button';
+
+
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -27,6 +31,7 @@ function Navbar() {
 
     window.addEventListener('resize', showButton);
 
+    
     return (
         <>
           <nav className="navbar">
@@ -39,7 +44,7 @@ function Navbar() {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='/about-us' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/about-us' className='nav-links' onClick= {closeMobileMenu} >
                             About us
                         </Link>
                     </li>
@@ -53,13 +58,19 @@ function Navbar() {
                             Pillars
                         </Link>
                     </li>
+                    
                     <li className='nav-item'>
-                        <Link to='/news' className='nav-links' onClick={closeMobileMenu}>
-                            News
-                        </Link>
+                        <a
+                          href="https://www.instagram.com/llsatuga/"
+                          target="_blank"
+                          className='nav-links'
+                          style={{ color: '#E1306C', fontSize: '24px', padding: '0 10px' }}
+                          >
+                          <FontAwesomeIcon icon={faInstagram} />
+                        </a>
                     </li>
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>DONATE</Button>}
+                {button && <Button2 buttonStyle='btn--outline'>DONATE</Button2>}
             </div>
             </nav>  
         </>
