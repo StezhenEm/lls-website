@@ -4,8 +4,6 @@ import { Button } from './Button';
 import { Button2 } from './Button';
 import './Body.css';
 
-const ugaPic = new URL("../image/image-1.jpg", import.meta.url)
-
 const llsPic = new URL("../image/Lightthenight.jpg", import.meta.url)
 
 function Body() {

@@ -63,6 +63,7 @@ function Navbar() {
                         <a
                           href="https://www.instagram.com/llsatuga/"
                           target="_blank"
+                          rel="noreferrer"
                           className='nav-links'
                           style={{ color: '#E1306C', fontSize: '24px', padding: '0 10px' }}
                           >
