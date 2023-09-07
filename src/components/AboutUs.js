@@ -3,7 +3,6 @@ import '../App.css';
 import './AboutUs.css';
 
 function AboutUs() {
-    const ugaPic = new URL("../image/image-1.jpg", import.meta.url)
     const lukePic = new URL("../image/Luke.jpg", import.meta.url)
     const nikhilPic = new URL("../image/Nikihal.jpg", import.meta.url)
     const sohanPic = new URL("../image/Sohan.jpg", import.meta.url)
