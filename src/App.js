@@ -5,7 +5,7 @@ import './App.css';
 import Home from './components/pages/Home'
 import AboutUs from './components/AboutUs';
 import Donate from './components/Donate';
-
+import Events from './components/Events';
 
 /*const ugaPic = new URL("image/image-1.jpg", import.meta.url)
 */
@@ -18,6 +18,7 @@ function App() {
           <Route path='/' exact element={<Home />} />
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/donate' element={<Donate />} />
+          <Route path='/events' element={<Events />} />
         </Routes>
       </Router>
       
