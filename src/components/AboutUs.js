@@ -3,6 +3,7 @@ import '../App.css';
 import './AboutUs.css';
 
 function AboutUs() {
+    /*
     const lukePic = new URL("../image/Luke.jpg", import.meta.url)
     const nikhilPic = new URL("../image/Nikihal.jpg", import.meta.url)
     const sohanPic = new URL("../image/Sohan.jpg", import.meta.url)
@@ -11,6 +12,7 @@ function AboutUs() {
     const stephenPic = new URL("../image/Stephen.jpg", import.meta.url)
     const yeboahPic = new URL("../image/yeboahPic.jpg", import.meta.url)
     const justinPic = new URL("../image/Jobi.jpg", import.meta.url)
+    
     const executives = [
         {image: sohanPic, text: "Sohan, Role: President"},
         {image: lukePic, text: "Luke Majors Role: Vice President"},
@@ -21,18 +23,20 @@ function AboutUs() {
         {image: drewPic, text: "Drew Lancaster, Role: Communications Director"},
         {image: justinPic, text: "Justin Obimpeh, Role: Research and Eductaion Coordinator"}
     ];
-
+    */
+   
     return(
         <div className='about-container' >
-            <h1>Meet the Executives!</h1>
-            <div className='executives-container'>
-                {executives.map((executive, index) => (
-                    <div className='executive' key={index}>
-                        <img src={executive.image} alt={executive.text} className="photo" />
-                        <p>{executive.text}</p>
-                    </div>
-                ))}
-            </div>
+            <h1>Our Executive Board</h1>
+            <p>Sohan - President, Luke Majors - Vice President, 
+         Nikhil Murari - Treasurer, Nathan Yeboah - Secretary, Kent Herlihy - Marketing Manager, 
+        Stephen Emoghene - Technology Director, 
+        Drew Lancaster - Communications Director, 
+        Justin Obimpeh - Research and Eductaion Coordinator, 
+        Areen Nagle - Social Media, 
+        Ketan Morrison - Fundraising, 
+        Edgrad Diaz - Co-Advocacy/Policy, 
+        Shaun Price - Co-Advocacy/Policy</p>
         </div>
 
     );

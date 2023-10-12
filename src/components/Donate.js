@@ -6,7 +6,7 @@ import './Donate.css';
 function Donate() {
     return(
         <div className='donate-container' >
-            <h1>Not currently accepting donations</h1>
+            <h2>Not currently accepting donations</h2>
             
         </div>
     );
