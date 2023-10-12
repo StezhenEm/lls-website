@@ -33,10 +33,10 @@ function AboutUs() {
         Stephen Emoghene - Technology Director, 
         Drew Lancaster - Communications Director, 
         Justin Obimpeh - Research and Eductaion Coordinator, 
-        Areen Nagle - Social Media, 
-        Ketan Morrison - Fundraising, 
-        Edgrad Diaz - Co-Advocacy/Policy, 
-        Shaun Price - Co-Advocacy/Policy</p>
+        Areen Nagle - Social Media Chair, 
+        Ketan Morrison - Fundraising Chair, 
+        Edgrad Diaz - Co-Advocacy/Policy Chair, 
+        Shaun Price - Co-Advocacy/Policy Chair</p>
         </div>
 
     );
