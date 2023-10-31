@@ -24,9 +24,11 @@ function AboutUs() {
         {image: justinPic, text: "Justin Obimpeh, Role: Research and Eductaion Coordinator"}
     ];
     */
-   
+    const logo = new URL("../image/logo.png", import.meta.url)
+
     return(
         <div className='about-container' >
+            <img src={logo} alt='Adventure'/> 
             <h1>Our Executive Board</h1>
             <ul>
         <li>Sohan - President</li>
