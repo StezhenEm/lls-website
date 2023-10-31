@@ -2,10 +2,11 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Home from './components/pages/Home'
+import Home from './components/pages/Home';
 import AboutUs from './components/AboutUs';
 import Donate from './components/Donate';
 import Events from './components/Events';
+import Pillars from './components/Pillars';
 
 /*const ugaPic = new URL("image/image-1.jpg", import.meta.url)
 */
@@ -19,6 +20,7 @@ function App() {
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/donate' element={<Donate />} />
           <Route path='/events' element={<Events />} />
+          <Route path='/pillars' element={<Pillars />} />
         </Routes>
       </Router>
       
