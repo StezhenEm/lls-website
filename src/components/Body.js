@@ -25,7 +25,7 @@ function Body() {
                     buttonStyle='btn--primary'
                     buttonSize='btn--large'
                 >
-                   DONATE 
+                   NEWSLETTER 
                 </Button2>
             </div>
             
