@@ -6,7 +6,7 @@ import { faBars, faDroplet, faXmark} from '@fortawesome/free-solid-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './Navbar.css';
 //import { Button } from './Button';
-import { Button2 } from './Button';
+//import { Button2 } from './Button';
 
 
 
@@ -71,7 +71,9 @@ function Navbar() {
                         </a>
                     </li>
                 </ul>
-                {button && <Button2 buttonStyle='btn--outline'>DONATE</Button2>}
+                {button && <Link to='/donate' className='nav-links' onClick= {closeMobileMenu} >
+                            DONATE
+                        </Link>}
             </div>
             </nav>  
         </>
