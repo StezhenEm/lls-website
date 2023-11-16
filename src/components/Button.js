@@ -30,7 +30,7 @@ export const Button = ({children, type, onClick, buttonStyle, buttonSize}) => {
 export const Button2 = ({children, type, onClick, buttonStyle, buttonSize}) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
     function openURL2() {
-        const url = 'https://docs.google.com/forms/d/e/1FAIpQLSfxpOEAn_YAdRI6Z-4GDQ85mXZ0V4DP1JIdHvf-Vj3Sf-C9DQ/viewform?vc=0&c=0&w=1&flr=0';
+        const url = 'https://www.canva.com/design/DAFwgKXW0GQ/u58qg4DlYvOFqeoAcWWnWQ/edit?utm_content=DAFwgKXW0GQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton';
         window.open(url);
     }
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
