@@ -19,7 +19,7 @@ function AboutUs() {
         <li>Justin Obimpeh - Research and Eductaion Coordinator</li>
         <li>Areen Nagle - Social Media Chair</li>
         <li>Ketan Morrison - Fundraising Chair</li>
-        <li>Edgrad Diaz - Co-Advocacy/Policy Chair</li>
+        <li>Edgard Diaz - Co-Advocacy/Policy Chair</li>
         <li>Shaun Price - Co-Advocacy/Policy Chair</li>
     </ul>
         </div>
