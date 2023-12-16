@@ -1,69 +1,58 @@
-img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
+.pillar-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  height: 90vh; /* Span the whole vertical space */
+  width: 100%; /* Span the whole horizontal space */
 }
 
-.body-container{
-  margin-top: 10px;
-  height: 90vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: insert 0 0 0 1000px rgba(0,0,0,0.2);
-  object-fit: contain;
+.pillar-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex; /* Use flexbox for vertical alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
 }
 
-.body-container > h1 {
-  color: #fff;
-  font-size: 100px;
-  margin-top: -100px;
+.pillar-item h2 {
+  font-size: 45px; /* Adjust this value as needed */
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-.body-container > p {
-  margin-top: 8px;
-  color: #fff;
-  font-size: 32px;
+.pillar-item p {
+  font-size: 32px; /* Adjust this value as needed */
+  position: relative; /* Needed to position the pseudo-element */
+  padding-left: 30px; /* Make space for the bullet point */
 }
 
-.body-btns {
-  margin-top: 32px;
+.pillar-item p::before {
+  content: ''; /* Add a pseudo-element for the bullet point */
+  position: absolute; /* Position it absolutely within the paragraph */
+  left: 0; /* Align to the left */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for exact centering */
+  width: 20px; /* Width of the bullet point */
+  height: 20px; /* Height of the bullet point */
+  background-image: url('../image/blooddrop.png'); /* Add your blood drop logo */
+  background-size: contain; /* Make sure the logo fits the element */
+  background-repeat: no-repeat; /* Do not repeat the background */
 }
 
-.body-btns .btn {
-  margin: 6px;
+/* Remove gaps between grid items */
+.pillar-container > .pillar-item:not(:last-child) {
+  border-right: none;
 }
 
+/* Responsive adjustments */
 @media screen and (max-width: 960px) {
-  .body-container > h1 {
-    font-size: 70px;
-    margin-top: -150px;
+  .pillar-container {
+    grid-template-columns: 1fr 1fr;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
-  .body-container > h1 {
-    font-size: 50px;
-    margin-top: -100px;
-  }
-
-  .body-container > p {
-    font-size: 30px;
-  }
-
-  .btn-mobile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-  }
-
-  .btn {
-    width: 100%;
+  .pillar-container {
+    grid-template-columns: 1fr;
   }
 }
