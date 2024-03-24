@@ -6,7 +6,7 @@ import './Events.css';
 function Events() {
     return(
         <div className='events-container' >
-            <e1>Next General Body Meeting: Second Semester</e1>
+            <e1>Next General Body Meeting: Monday, March 24th </e1>
             
         </div>
     );

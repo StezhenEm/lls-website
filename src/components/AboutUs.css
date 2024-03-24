@@ -53,19 +53,18 @@
 }
 
 .board-info p {
-    font-size: 1.6em; /* Adjustable font size for name */
+    font-size: 1.6em; 
 }
 
-/* Add custom margins or padding as needed to adjust the layout */
+
 .board-info strong,
 .board-info p {
-    margin: 0; /* Remove margin to align text properly */
-    padding: 5px 0; /* Add padding to space out the text */
+    margin: 0; 
+    padding: 5px 0; 
 }
 
-/* This ensures that the images and text stay within their designated areas */
 .board-member {
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden; 
 }
 
-/* You can add more styling as per your design preference */
+
